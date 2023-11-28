@@ -7,7 +7,7 @@ function UserDetails({user,fun,index}){
              </div>
             <img src={user.avatar} onError={() => fun(index)} className="rounded-circle bg-secondary mt-3"  style={{height:'100px' }} />
             <span className="mt-2 fw-bold">{user.profile.username}</span>
-            <p className="d-flex  align-items-start mt-2 w-75  rounded" style={{backgroundColor:'rgba(219, 219, 219, 1)',color:'rgba(108, 108, 108, 1) tex',marginLeft:'10px'}}> {user.Bio}</p>
+            <p className="d-flex  align-items-start mt-2 w-75  rounded p-2" style={{backgroundColor:'rgba(219, 219, 219, 1)',color:'rgba(108, 108, 108, 1) tex',marginLeft:'10px',textAlign:'start'}}> {user.Bio}</p>
             <div className="d-flex flex-column  align-items-start w-75 mt-2">
                 <span>Full Name</span>
                 <div className="d-flex w-100 justify-content-start align-items-center rounded ml-2"  style={{backgroundColor:'rgba(219, 219, 219, 1)',color:'rgba(108, 108, 108, 1)'}}>
